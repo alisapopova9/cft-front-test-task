@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Task#2</title>
+</head>
+<body>
+<div class="container container_font">
+    <h1 class="container__header">Табличка с фильмами</h1>
+    <form class="container__search-box" id="column-search-form">
+        <div class="search-box__input">
+            <label for="column-search-input">Введите подстроку:</label>
+            <input id="column-search-input" type="text" class="input input_border input_font">
+        </div>
+        <div class="search-box__select">
+            <label for="column-select">Выберите столбец:</label>
+            <select class="select select_border" name="" id="column-select">
+                <option value="all">Все столбцы</option>
+                <option value="1">Название фильма</option>
+                <option value="2">Режиссер</option>
+                <option value="3">Страна</option>
+                <option value="4">Хронометраж</option>
+                <option value="5">Оценка</option>
+            </select>
+        </div>
+        <div class="search-box__button">
+            <button class="button button_red" id="column-search-button" type="submit">Найти</button>
+        </div>
+    </form>
+    <div class="search-box__result">
+        <span id="search-result"></span>
+    </div>
+    <div class="container__table">
+        <div class="table__header">
+            <div class="table__cell cell_header cell_name" id="film-name">
+                Название фильма
+            </div>
+            <div class="table__cell cell_header cell_director" id="film-director">
+                Режиссер
+            </div>
+            <div class="table__cell cell_header" id="film-country">
+                Страна
+            </div>
+            <div class="table__cell cell_header" id="film-duration">
+                Хронометраж
+            </div>
+            <div class="table__cell cell_header cell_rank" id="film-rank">
+                Оценка
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__cell cell_content cell_name" id="film-name-1">
+                Побег из Шоушенка
+            </div>
+            <div class="table__cell cell_content cell_director" id="film-director-1">
+                Фрэнк Дарабонт
+            </div>
+            <div class="table__cell cell_content" id="film-country-1">
+                США
+            </div>
+            <div class="table__cell cell_content" id="film-duration-1">
+                142 мин.
+            </div>
+            <div class="table__cell cell_content cell_rank" id="film-rank-1">
+                9.190
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__cell cell_content cell_name" id="film-name-2">
+                Зеленая миля
+            </div>
+            <div class="table__cell cell_content cell_director" id="film-director-2">
+                Фрэнк Дарабонт
+            </div>
+            <div class="table__cell cell_content" id="film-country-2">
+                США
+            </div>
+            <div class="table__cell cell_content" id="film-duration-2">
+                189 мин.
+            </div>
+            <div class="table__cell cell_content cell_rank" id="film-rank-2">
+                9.134
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__cell cell_content cell_name" id="film-name-3">
+                Форрест Гамп
+            </div>
+            <div class="table__cell cell_content cell_director" id="film-director-3">
+                Роберт Земекис
+            </div>
+            <div class="table__cell cell_content" id="film-country-3">
+                США
+            </div>
+            <div class="table__cell cell_content" id="film-duration-3">
+                142 мин.
+            </div>
+            <div class="table__cell cell_content cell_rank" id="film-rank-3">
+                9.012
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__cell cell_content cell_name" id="film-name-4">
+                Список Шиндлера
+            </div>
+            <div class="table__cell cell_content cell_director" id="film-director-4">
+                Стивен Спилберг
+            </div>
+            <div class="table__cell cell_content" id="film-country-4">
+                США
+            </div>
+            <div class="table__cell cell_content" id="film-duration-4">
+                195 мин.
+            </div>
+            <div class="table__cell cell_content cell_rank" id="film-rank-4">
+                8.886
+            </div>
+        </div>
+        <div class="table__row">
+            <div class="table__cell cell_content cell_name" id="film-name-5">
+                1+1
+            </div>
+            <div class="table__cell cell_content cell_director" id="film-director-5">
+                Оливье Накаш, Эрик Толедано
+            </div>
+            <div class="table__cell cell_content" id="film-country-5">
+                Франция
+            </div>
+            <div class="table__cell cell_content" id="film-duration-5">
+                112 мин.
+            </div>
+            <div class="table__cell cell_content cell_rank" id="film-rank-5">
+                8.831
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
